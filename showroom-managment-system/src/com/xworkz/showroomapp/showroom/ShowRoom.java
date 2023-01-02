@@ -8,6 +8,7 @@ public class ShowRoom {
 					
 													//CRUD OPERATION CONCEPT
 	
+	//has a relationship
 	Manager manager[];
 	int index;
 	

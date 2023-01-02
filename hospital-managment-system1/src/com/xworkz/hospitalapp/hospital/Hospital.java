@@ -6,14 +6,27 @@ public class Hospital {
 	
 				//CRUD OPERATION CONCEPT 
 	
-	Patient patient[] = new Patient[2]; //first we need to fix the size of the array , this is the drawback of array.
+	
+	Patient patient[];
+	int index;
+	
+	public Hospital(int size) {
+		System.out.println("ShowRoom object is Creted");
+		patient = new Patient[size];
+	}
+	
+	
+	
+	/* this block of code is used before scanner object is used 
+	  
+	  Patient patient[] = new Patient[2]; //first we need to fix the size of the array , this is the drawback of array.
 	int index;
 	
 	
 		public Hospital() {
 		
 			System.out.println("Hospital object is created");
-		}
+		}*/
 	
 		
 		
@@ -81,6 +94,7 @@ public class Hospital {
 		
 		
 		public boolean updatePatientNameByPatientGender(String patientNewName, String gender) {
+			
 				boolean ispatientNameUpdate=false;
 				System.out.println("update PatientName By Gender Method is Started");
 			for(int i1=0; i1<patient.length; i1++) {
@@ -88,11 +102,12 @@ public class Hospital {
 						System.out.println("The patient current name is:"+patient[i1].patientName);
 						patient[i1].patientName=patientNewName;
 						System.out.println("The New Name of the Patient is:"+patient[i1].patientName);
-					}
+					}else {System.out.println("Gender not Matched");}
 				
 			}
 				System.out.println("update PatientName By Gender Method is Ended");
-				return ispatientNameUpdate;			
+				//return ispatientNameUpdate;
+				return ispatientNameUpdate;
 		}
 		
 		

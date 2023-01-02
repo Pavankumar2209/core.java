@@ -1,6 +1,6 @@
 package com.xworkz.showroomapp;
 
-import com.xworkz.showroomapp.manager.Manager;
+import com.xworkz.showroomapp.manager.Manager;   //FQCN = fully qualified class name.
 
 import com.xworkz.showroomapp.showroom.ShowRoom;
 
@@ -15,6 +15,7 @@ public class ShowRoomTester {
 		
 		
 		//for giving data in run time we use scanner class or object .
+		
 		
 		Scanner scanner = new Scanner(System.in); //scanner object is created.
 		System.out.println("Enter the Size");
@@ -51,19 +52,21 @@ public class ShowRoomTester {
 		room.saveManager(manag);
 		//room.saveManager(manag1);
 		//room.saveManager(manag2);
+		}
+		
 		room.getManager();
 		System.out.println("Main method ended");
-		//scanner.close();
+		scanner.close();
 		
-	}
-		//room.getManagerByManagerQualification("B.com");
-		//room.getManagerByManagerAddress("Vijayanagar");
-		//room.getManagerByContactNo(9876542222l);
-		//room.getManagerByManagerName("Pavan");
-		//room.getManagerByManagerGender("Female");  not getting female details doubt
-		//room.getManagerByManagerGender("Female");
-		//room.updateManagerContactNoById(8899775522l, 3);
-	}
 	
-	
+		room.getManagerByManagerQualification("B.com");
+		room.getManagerByManagerAddress("Vijayanagar");
+		room.getManagerByContactNo(9876542222l);
+		room.getManagerByManagerName("Pavan");
+		room.getManagerByManagerGender("Female");
+		room.updateManagerContactNoById(8899775522l, 3);
+	}
 }
+	
+	
+
