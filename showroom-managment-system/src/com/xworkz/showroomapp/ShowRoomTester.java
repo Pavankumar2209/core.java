@@ -18,34 +18,47 @@ public class ShowRoomTester {
 		
 		
 		Scanner scanner = new Scanner(System.in); //scanner object is created.
+		
+		
+		
 		System.out.println("Enter the Size");
 		int size = scanner.nextInt();
 		ShowRoom room = new ShowRoom(size);
 		
 		for(int i=0; i<size; i++) {
+			
+			Manager manag= new Manager();
+			
 		System.out.println("Enter thr manager id");
 		int managerId = scanner.nextInt(); 
+		manag.setManagerId(managerId);
 		
 		System.out.println("Enter thr manager Manager name");
-		String managerName = scanner.next();
+		manag.setManagerName(scanner.next());
+		
 		
 		System.out.println("Enter the manager Address");
 		String address = scanner.next();
+		manag.setAddress(address);
+		
 		
 		System.out.println("Enter the Manager Qualification");
 		String qualification = scanner.next();
+		manag.setQualification(qualification);
 		
 		System.out.println("Enter the manager Contact No");
 		long contactNo = scanner.nextLong();
+		manag.setContactNo(contactNo);
 		
 		System.out.println("Enter the Manager gender");
 		String gender = scanner.next();
+		manag.setGender(gender);
 		
 		
 		
 		
 		
-		Manager manag= new Manager(managerId,managerName, address,  qualification,contactNo,gender);
+		
 		//Manager manag1= new Manager(2,"Manoj","Rajajinagar", "B.com", 9876542222l,"Male");
 		//Manager manag2= new Manager(3,"Kruthika","Banashankari", "MBA", 9988776655l,"Female");
 		

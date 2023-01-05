@@ -10,6 +10,10 @@ public class Hospital {
 	Patient patient[];
 	int index;
 	
+	public Hospital() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Hospital(int size) {
 		System.out.println("ShowRoom object is Creted");
 		patient = new Patient[size];
@@ -34,7 +38,7 @@ public class Hospital {
 				boolean isAdmitted = false;
 				System.out.println("Inside admit method");
 		
-				if(patient.patientName != null && patient.patientName != "") 
+				if(patient.getPatientName() != null && patient.getPatientName() != "") 
 				{
 					this.patient[index++]= patient;
 					System.out.println("Patient is sucessfully added to the hospital");
@@ -51,7 +55,7 @@ public class Hospital {
 	
 		public void getAllPatients() {
 			for(int i=0;i<patient.length;i++) {
-			System.out.println(patient[i].patientId+" "+patient[i].patientName +" "+ patient[i].bloodGroup+ " "+patient[i].age+ " "+patient[i].gender);
+			System.out.println(patient[i].getPatientId()+" "+patient[i].getPatientName() +" "+ patient[i].getPatientBloodGroup()+ " "+patient[i].getAge()+ " "+patient[i].getGender());
 			}
 		
 		}
@@ -62,9 +66,9 @@ public class Hospital {
 			System.out.println(" getPatient By PatientId Method Started");
 		
 			for(int in=0;in<patient.length;in++) {
-				if(patient[in].patientId==patientId) {
+				if(patient[in].getPatientId()==patientId) {
 					System.out.println("Patient Id is matching...Proceed the data");
-					System.out.println(patient[in].patientId+" "+patient[in].patientName+" "+patient[in].bloodGroup+" "+patient[in].age+" "+patient[in].gender);
+					System.out.println(patient[in].getPatientId()+" "+patient[in].getPatientName()+" "+patient[in].getPatientBloodGroup()+" "+patient[in].getAge()+" "+patient[in].getGender());
 					return patient[in];	
 				}
 			}
@@ -78,10 +82,10 @@ public class Hospital {
 				boolean isAgeUpdate=false;
 				System.out.println("update PatientAge ByPatientId method is started");
 			for(int ind=0;ind<patient.length;ind++) {
-				if(patient[ind].patientId==patientId) {
-					System.out.println("The current age of the patient is:"+patient[ind].age);
-					patient[ind].age=newAge;
-					System.out.println("The new age of the Patient is:"+patient[ind].age);
+				if(patient[ind].getPatientId()==patientId) {
+					System.out.println("The current age of the patient is:"+patient[ind].getAge());
+					patient[ind].setAge(newAge);
+					System.out.println("The new age of the Patient is:"+patient[ind].getAge());
 					
 					
 				}
@@ -98,10 +102,10 @@ public class Hospital {
 				boolean ispatientNameUpdate=false;
 				System.out.println("update PatientName By Gender Method is Started");
 			for(int i1=0; i1<patient.length; i1++) {
-					if(patient[i1].gender==gender) {
-						System.out.println("The patient current name is:"+patient[i1].patientName);
-						patient[i1].patientName=patientNewName;
-						System.out.println("The New Name of the Patient is:"+patient[i1].patientName);
+					if(patient[i1].getGender().equals(gender)) {
+						System.out.println("The patient current name is:"+patient[i1].getPatientName());
+						patient[i1].setPatientName(patientNewName);
+						System.out.println("The New Name of the Patient is:"+patient[i1].getPatientName());
 					}else {System.out.println("Gender not Matched");}
 				
 			}

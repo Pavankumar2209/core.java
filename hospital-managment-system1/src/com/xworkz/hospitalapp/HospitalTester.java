@@ -11,8 +11,7 @@ public class HospitalTester {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the size");
-		int size = scanner.nextInt()
-;			
+		int size = scanner.nextInt();			
 		Hospital hospital = new Hospital(size);
 		
 		for(int i=0; i<size;i++) {
