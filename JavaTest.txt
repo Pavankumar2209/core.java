@@ -1,0 +1,136 @@
+
+
+1.Q :Explain 
+
+	Ans:
+
+		2.class and object 
+	
+			class: class is blue print which contain states and behaviours.
+					syntax of class = class className {}
+	
+			Object: object is instance of class.
+					Syntax of object is : class name  reference variable  = new class name;
+			
+			
+		3. JVM,JRE,JDK
+	
+			JVM: Java virtual machine provied Run time environmet to execute the by code. and 
+					Task of Jvm is : 1 load the byte code.
+									 2.execute the byte code.
+									 3.verify the byte code.
+									 
+			JRE: Java run time environment is a combination of JVM and set of libraries. JRE is minimum required to execute the byte code.
+			
+			JDK: JDK is the combination of JRE and development tools. java tooles complier and debugger.
+					JDK is required do the program and execute the program.
+			
+			
+2.Ans:   
+			
+				public class ReversNumber {
+	
+					public static void main(String[] args) {
+		
+						int num[]= {1,2,3,4};
+		
+						for(int i=num.length-1; i>=0; i--) {
+			
+						System.out.print(num[i]);
+						}
+		
+					}
+	
+
+				}
+
+			
+3.Ans:   
+		
+				class ReversString{
+								
+					public static void main(String[] args){
+	
+						String name="Program";
+	
+						char a1[]=name.toCharArray();
+	
+						for (int i=a1.length-1;i>=0;i--){
+	
+							System.out.print(a1[i]);
+
+						}
+
+					}
+
+
+				}
+	
+	
+			
+4.Q : Explain the constructor and its type's?
+
+	Ans:  Constructor is a specila type of method. Name of the constructor should be same as className.
+		
+		example: 	class RailwayStation{
+		
+						public RailwayStation(){
+					
+						} 
+					
+				
+					}
+	
+		Types of Constructor are
+		1. Default constructor
+		2. parameterised constructor.
+		
+		1. Default Constructor :  constructor doesnt contain any parameter list is known as Defaul Constructor.
+			example: class RailwayStation{
+		
+						public RailwayStation(){
+						// default constructor
+						} 
+					
+					}
+		
+		2. Parameterised Constructor : constructor which contain parameter list is know as Parameterised constructor.
+			example: 
+						class RailwayStation{
+		
+							public RailwayStation(String name, int age){
+						
+						
+							} 
+		
+						}
+
+
+5.Q Difference between this keyword and this()?
+
+Ans:   this keyword is used to initilize the instance variable .
+
+
+
+11.write a program to find the length of the array is present in an given array ?  input= [12,3,2,45,6,7,6]    optput: 7
+Ans:
+
+		class LengthOfArray{
+		
+			public static void main(String[] args){
+		
+			int num[] = {12,3,2,45,6,7,6};
+		
+			System.out.println("Length of the array :"+ num.length);
+		
+			}
+
+		}			
+		
+	
+
+
+
+
+	
+
