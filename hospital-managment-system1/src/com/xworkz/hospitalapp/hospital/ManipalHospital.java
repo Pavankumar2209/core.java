@@ -32,6 +32,23 @@ public class ManipalHospital extends Hospital{
 	}
 	
 
+	public boolean canteen(Patient patient) {
+		System.out.println("Inside admit Patine of Manipal Hospital");
+		if(isApplicationFormFilled=true) {
+			System.out.println("Appllication form is filled can add the patien now...");
+			boolean isAdmitted = super.admit(patient);
+			System.out.println("Patient admitted sucessfully");
+			return isAdmitted;
+		}
+		return false;
+	}
+	
+	//creating method 
+	public void canteen() {
+		System.out.println("Food is delicious");
+	}
+	
+
 	
 	
 
