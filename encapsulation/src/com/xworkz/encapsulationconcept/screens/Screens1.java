@@ -1,8 +1,19 @@
 package com.xworkz.encapsulationconcept.screens;
 
+
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Setter
+@Getter
+
 public class Screens1 {
 
 	
+	public Screens1() {
+		
+	}
 
 	private String theaterName;
 	private String location;
@@ -11,12 +22,8 @@ public class Screens1 {
 	private String showTime;
 	
 	
-	public Screens1() {
-		
-	}
 	
-	
-	/*public Screens1(String theaterName, String location, int screenNo, String movieName, String showTime ) {
+	public Screens1(String theaterName, String location, int screenNo, String movieName, String showTime ) {
 		
 		this.theaterName= theaterName;
 		this.location = location;
@@ -25,11 +32,11 @@ public class Screens1 {
 		this.showTime = showTime;
 		
 		
-	}*/
+	}
 	
 	
 	//getter and setter methods helps us to invoke private variables and methods
-	
+	/*
 	public void setTheaterName(String theaterName) {
 		this.theaterName= theaterName;
 	}
@@ -68,7 +75,7 @@ public class Screens1 {
 	}
 	public String getShowTime() {
 		return showTime;
-	}
+	}*/
 	
 	
 	

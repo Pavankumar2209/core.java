@@ -102,8 +102,9 @@ public class Bank {
 			if(customer[i].getCustomerId()==id) {
 				System.out.println("Customer Id:"+" "+customer[i].getCustomerId() );
 				System.out.println("Customer id is Matched Proced with....");
+				System.out.println("Customer current Name is:"+" "+customer[i].getCustomerName());
 				customer[i].setCustomerName(newName);
-				System.out.println("Customer Updated as a"+" "+ customer[i].getCustomerName());
+				System.out.println("Customer name Updated "+" "+ customer[i].getCustomerName());
 				System.out.println(customer[i].getCustomerName()+" "+ customer[i].getCustomerId()+" "+ customer[i].getBranch()+" "+ customer[i].getCity());
 				return customer[i];
 				

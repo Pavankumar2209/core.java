@@ -18,6 +18,7 @@ public class ManipalHospitalTester {
 		int size= sc.nextInt();
 		
 		//upcasting : here  created  object using parent class ,, 
+		
 		Hospital hospital = new ManipalHospital (size);
 		
 		
@@ -40,7 +41,7 @@ public class ManipalHospitalTester {
 			pat.setPatientName(sc.next());
 			
 			System.out.println("Enter Patient Blood Group");
-			pat.setPatientBloodGroup(sc.next());
+			pat.setBloodGroup(sc.next());
 			
 			System.out.println("Enter Patient Age");
 			pat.setAge(sc.nextInt());
@@ -55,28 +56,38 @@ public class ManipalHospitalTester {
 			/*hospital.getAllPatients();
 			hosp.canteen();*/
 		
+		int option = 0;
+		 String a="yes";
+		 //String b="";
+		 
+	do {
 		
-		
+			
 		//Switch concept : switch parameter must be same as option datatype and case must be same as option
 			System.out.println("Enter 1 to get all patient");
 			System.out.println("Enter 2  to get patient by Id");
 			System.out.println("Enter 3 to update patient age by Id");
 			System.out.println("Enter 4 to update patient name by gender");
+			//System.out.println("Enter 5 to exit ");
 			
-			int option = sc.nextInt();
 			
-						 
+			
+			option = sc.nextInt();
 			
 			switch(option) {
 			
+			
+			
 			case 1:hospital.getAllPatients();
+					System.out.println("Thank you for visiting us");
+					
 			break;
 			
 			
 		
 			case 2:System.out.println("Enter Patient id ");
 			    	int id= sc.nextInt();
-			    	hospital.getPatientByPatientId(id);
+			    	hospital.getPatientByPatientId(id);		//method called
 			    	break;
 			
 			
@@ -85,7 +96,7 @@ public class ManipalHospitalTester {
 					int updateage = sc.nextInt();
 					System.out.println("Enter the patient Id");
 					int j= sc.nextInt();
-					hospital.updatePatientAgeByPatientIdI(updateage, j);
+					hospital.updatePatientAgeByPatientIdI(updateage, j);  //method called
 					break;
 				
 				
@@ -93,12 +104,21 @@ public class ManipalHospitalTester {
 					String newname=sc.next();
 					System.out.println("Enter the Patient Gender");
 					String gender=sc.next();
-					hospital.updatePatientNameByPatientGender(newname, gender);
+					hospital.updatePatientNameByPatientGender(newname, gender); //method called
+					break;
+			 	
+			default: System.out.println("Enter Valid Key/number"); 
 					break;
 			}
 			
+			System.out.println("Do you want to Continue : Yes/No");
 			
-		
+			
+			
+				
+		}while(a.equals(sc.next()));
+	
+	sc.close();
 	}
-
+		
 }

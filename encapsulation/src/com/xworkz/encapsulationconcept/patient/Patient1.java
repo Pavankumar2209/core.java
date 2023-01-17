@@ -1,5 +1,15 @@
 package com.xworkz.encapsulationconcept.patient;
 
+
+// using lombok to eliminate the write getter and setter methods
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+
+
 public class Patient1 {
 	
 	//Encapsulation : 
@@ -24,7 +34,7 @@ public class Patient1 {
 	}
 	
 													//getter and setter method helps us to make variables public 
-	
+	/*
 	public void setPatientId(int patientId) {
 		this.patientId = patientId;
 	}
@@ -63,6 +73,6 @@ public class Patient1 {
 	}
 	public String getGender() {
 	return gender;
-	}
+	}*/
 	
 }

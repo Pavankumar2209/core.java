@@ -1,6 +1,17 @@
 package com.xworkz.encapsulationconcept.manager;
 
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Setter
+@Getter
 public class Manager1 {
+	
+	
+	public Manager1() {
+		
+	}
 	
 
 	// Encapsulation (when private is come into code that is encapsulation
@@ -23,6 +34,8 @@ public class Manager1 {
 		
 	
 			}
+			
+			/*
 			public Manager1() {
 				//default constructor is created
 				
@@ -75,7 +88,7 @@ public class Manager1 {
 				}
 				public String getGender() {
 					return gender;
-				}
+				}*/
 
 
 }

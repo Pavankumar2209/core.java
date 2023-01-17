@@ -16,15 +16,15 @@ public class Patient1Tester {
 		patient.setPatientName(sc.next());
 		
 		System.out.println("Enter Patient Age");
-		patient.setPatientAge(sc.nextInt());
+		patient.setAge(sc.nextInt());
 		
 		System.out.println("Enter Patient BloodGroup");
-		patient.setBloodgroup(sc.next());
+		patient.setBloodGroup(sc.next());
 		
 		System.out.println("Enter patient gender");
 		patient.setGender(sc.next());
 		
-		System.out.println(patient.getPatientId()+" "+patient.getPatientName()+" "+patient.getPatientAge()+" "+patient.getBloodGroup()+" "+patient.getGender());
+		System.out.println(patient.getPatientId()+" "+patient.getPatientName()+" "+patient.getAge()+" "+patient.getBloodGroup()+" "+patient.getGender());
 		
 		
 		sc.close();

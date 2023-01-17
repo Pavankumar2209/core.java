@@ -55,7 +55,7 @@ public class Hospital extends Object{   //object is a parent most class in a jav
 	
 		public void getAllPatients() {
 			for(int i=0;i<patient.length;i++) {
-			System.out.println(patient[i].getPatientId()+" "+patient[i].getPatientName() +" "+ patient[i].getPatientBloodGroup()+ " "+patient[i].getAge()+ " "+patient[i].getGender());
+			System.out.println(patient[i].getPatientId()+" "+patient[i].getPatientName() +" "+ patient[i].getBloodGroup()+ " "+patient[i].getAge()+ " "+patient[i].getGender());
 			}
 		
 		}
@@ -68,7 +68,7 @@ public class Hospital extends Object{   //object is a parent most class in a jav
 			for(int in=0;in<patient.length;in++) {
 				if(patient[in].getPatientId()==patientId) {
 					System.out.println("Patient Id is matching...Proceed the data");
-					System.out.println(patient[in].getPatientId()+" "+patient[in].getPatientName()+" "+patient[in].getPatientBloodGroup()+" "+patient[in].getAge()+" "+patient[in].getGender());
+					System.out.println(patient[in].getPatientId()+" "+patient[in].getPatientName()+" "+patient[in].getBloodGroup()+" "+patient[in].getAge()+" "+patient[in].getGender());
 					return patient[in];	
 				}
 			}

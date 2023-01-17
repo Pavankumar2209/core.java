@@ -1,5 +1,11 @@
 package com.xworkz.hospitalapp.patient;
 
+import lombok.Getter;
+
+import lombok.Setter;
+
+@Setter
+@Getter
 public class Patient  {
 		
 	
@@ -25,7 +31,7 @@ public class Patient  {
 		
 		//public getter and setter method
 		
-		public void setPatientId(int patientId) {
+		/*public void setPatientId(int patientId) {
 			this.patientId=patientId;
 		}
 		public int getPatientId() {
@@ -36,7 +42,7 @@ public class Patient  {
 		public void setPatientName(String patientName) {
 			this.patientName = patientName;
 		}
-		public String getPatientName() {
+		public String getPatientName() { 							 to avoid the writing getter and setter method to skip we used lombok jar .
 			return patientName;
 		}
 		
@@ -59,7 +65,7 @@ public class Patient  {
 		}
 		public String getGender() {
 			return gender;
-		}
+		}*/
 		
 		
 		
