@@ -2,7 +2,8 @@ package com.xworkz.abstractionapp.juiceshope;
 
 import com.xworkz.abstractionapp.shop.Shop;
 
-public class JuiceShop implements Shop {
+//abstract class 
+public abstract class JuiceShop implements Shop {
 
 	@Override
 	public long doBusiness() {

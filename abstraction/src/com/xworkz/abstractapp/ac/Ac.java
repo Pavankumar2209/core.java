@@ -2,7 +2,7 @@ package com.xworkz.abstractapp.ac;
 
 import com.xworkz.abstractapp.switches.Switch;
 
-public class Ac implements Switch{
+public abstract class Ac implements Switch{
 
 	@Override
 	public void onOff() {

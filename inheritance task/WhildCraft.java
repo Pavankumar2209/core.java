@@ -1,6 +1,0 @@
-class WhildCraft extends Bag{
-
-
-
-
-}

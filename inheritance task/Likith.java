@@ -1,6 +1,0 @@
-class Likith extends Developer{
-
-
-
-
-}

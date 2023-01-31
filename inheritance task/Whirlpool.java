@@ -1,6 +1,0 @@
-class Whirlpool extends Fridge{
-
-
-
-
-}

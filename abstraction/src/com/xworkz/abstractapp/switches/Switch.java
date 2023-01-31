@@ -4,7 +4,12 @@ package com.xworkz.abstractapp.switches ;
 public interface Switch {
 	
 	
+	
 	//Abstract method created
 	public void onOff();
+	
+	public void on();
+	
+	public void off();
 
 }
