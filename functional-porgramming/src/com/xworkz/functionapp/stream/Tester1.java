@@ -34,6 +34,9 @@ public class Tester1 {
 		List<Integer> li = lis.stream().filter(ir -> (ir >100)).collect(Collectors.toList());
 		System.out.println(li);
 		
+		System.out.println("datas from the given list which  are  above 100");
+		List<Integer> li1 = lis.stream().filter(ir -> (ir <100)).collect(Collectors.toList());
+		System.out.println(li1);
 		
 	}
 
