@@ -21,6 +21,16 @@ public class Tester1 {
 		lis.add(24);
 		lis.add(112);
 		lis.add(162);
+		lis.add(55);
+		lis.add(126);
+		lis.add(222);
+		lis.add(96);
+		lis.add(10);
+		lis.add(110);
+		lis.add(162);
+		lis.add(200);
+		lis.add(42);
+		
 		
 		Iterator<Integer>  itr = lis.iterator();
 		System.out.println("Datas from  the given list are ");
