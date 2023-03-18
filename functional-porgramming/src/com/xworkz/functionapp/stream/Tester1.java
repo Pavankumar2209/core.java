@@ -1,6 +1,7 @@
 package com.xworkz.functionapp.stream;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -48,6 +49,31 @@ public class Tester1 {
 		List<Integer> li1 = lis.stream().filter(ir -> (ir <100)).collect(Collectors.toList());
 		System.out.println(li1);
 		
+		
+		
+		
+		
+		
+		//comparing is a method, which is available in Comparator interface and we providing which type of data it is 
+		//max and min are method available in optional interface
+		System.out.println(lis.stream().max(Comparator.comparing(Integer::valueOf)));  //(::)method reference symbol
+		System.out.println(lis.stream().min(Comparator.comparing(Integer::intValue)));
+		
+		
+		
+		//Different ways of getting the min and max values from the list other than max and min methods
+		System.out.println(lis.stream().mapToInt(Integer::intValue).max());
+		
+		System.out.println(lis.stream().collect(Collectors.maxBy(Comparator.naturalOrder())));
+		System.out.println(lis.stream().collect(Collectors.minBy(Comparator.naturalOrder())));
+		
+		
+		
+		
+		//task for today is : compare string values 
+		
+				
+				
 	}
 
 }

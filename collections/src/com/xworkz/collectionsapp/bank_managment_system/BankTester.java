@@ -57,21 +57,23 @@ public class BankTester {
 			}
 			 bank.getAllCustomer();
 				
-				System.out.println("Sorting the data based on Name ");
-				Collections.sort(di	, new NameComparator());
-				System.out.println(di);
+			 System.out.println("Sorting the data based on Name ");
+			 Collections.sort(di	, new NameComparator());
+			 System.out.println(di);
 				
-				System.out.println("Sorting data based on branch");
-				Collections.sort(di, new BranchComparator());
-				System.out.println(di);
+			 System.out.println("---------------------------------------------------");
 				
-				System.out.println("Sorting data based on City ");
-				Collections.sort(di, new CityComparator());
-				System.out.println(di);
+			 System.out.println("Sorting data based on branch");
+			 Collections.sort(di, new BranchComparator());
+			 System.out.println(di);
 				
+			 System.out.println("---------------------------------------------------");
 				
+			 System.out.println("Sorting data based on City ");
+			 Collections.sort(di, new CityComparator());
+			 System.out.println(di);
 				
-				 	
+ 	
 			 sc.close();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
