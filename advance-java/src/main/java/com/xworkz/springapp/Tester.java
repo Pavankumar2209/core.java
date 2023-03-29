@@ -9,7 +9,7 @@ public class Tester {
 	
 	public static void main(String args[]) {
 		
-		//ApplicationContext is a intervace  and AnnotationConfigApplicationContext is implemented class and SpringConfiguration.class is argument
+		//ApplicationContext is a interface  and AnnotationConfigApplicationContext is implemented class and SpringConfiguration.class is argument
 		ApplicationContext application = new AnnotationConfigApplicationContext(SpringConfiguration.class);
 		
 		Person person1 =  application .getBean("person1",Person.class);
@@ -107,10 +107,10 @@ public class Tester {
 		System.out.println(kit3);
 		
 		Kitchen kit4 = application.getBean("kitchen4",Kitchen.class);
-		System.out.println(kit1);
+		System.out.println(kit4);
 		
 		Kitchen kit5 = application.getBean("kitchen5",Kitchen.class);
-		System.out.println(kit1);
+		System.out.println(kit5);
 		
 		System.out.println("----------------------------------------------------------------------");
 		
@@ -257,16 +257,16 @@ public class Tester {
 		System.out.println(flp1);
 		
 		Float flp2 =  application.getBean("fl2",Float.class);
-		System.out.println(flp1);
+		System.out.println(flp2);
 		
 		Float flp3 =  application.getBean("fl3",Float.class);
-		System.out.println(flp1);
+		System.out.println(flp3);
 		
 		Float flp4 =  application.getBean("fl4",Float.class);
-		System.out.println(flp1);
+		System.out.println(flp4);
 		
 		Float flp5 =  application.getBean("fl5",Float.class);
-		System.out.println(flp1);
+		System.out.println(flp5);
 		
 		System.out.println("----------------------------------------------------------------------");
 		

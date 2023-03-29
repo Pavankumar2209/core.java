@@ -359,7 +359,7 @@ public class SpringConfiguration {
 		Glass glass = new Glass();
 		glass.setName("");
 		glass.setColour("Black");
-		glass.setUse("To drink the water");
+		glass.setUse("From glass we can make Tea cups");
 		
 		return glass;
 	}
@@ -370,7 +370,7 @@ public class SpringConfiguration {
 		Glass glass = new Glass();
 		glass.setName("");
 		glass.setColour("Red");
-		glass.setUse("To drink the water");
+		glass.setUse("Glass used in windows");
 		
 		return glass;
 	}
@@ -381,7 +381,7 @@ public class SpringConfiguration {
 		Glass glass = new Glass();
 		glass.setName("");
 		glass.setColour("White");
-		glass.setUse("To drink the water");
+		glass.setUse("Temmper Glass used to protect the mobile disply");
 		
 		return glass;
 	}
@@ -403,7 +403,7 @@ public class SpringConfiguration {
 		Glass glass = new Glass();
 		glass.setName("");
 		glass.setColour("Black");
-		glass.setUse("To drink the water");
+		glass.setUse("Glass is used in doors");
 		
 		return glass;
 	}
@@ -419,24 +419,24 @@ public class SpringConfiguration {
 	
 	@Bean(name ="str2")
 	public String getString2() {
-		return "We started with spring";
+		return "Spring manage objects ";
 		
 	}
 	
 	@Bean(name ="str3")
 	public String getString3() {
-		return "We started with spring";
+		return "ApplicationContext is a interface ";
 		
 	}
 	
 	@Bean(name ="str4")
 	public String getString4() {
-		return "We started with spring";
+		return "AnnotationConfigApplicationContext is implemented class";
 		
 	}
 	@Bean(name ="str5")
 	public String getString5() {
-		return "We started with spring";
+		return "getBean methods are available in applicationContext";
 		
 	}
 	
