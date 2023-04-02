@@ -4,8 +4,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.xworkz.addressapp.task1.bar.Bar;
+import com.xworkz.addressapp.task1.building.Building;
 import com.xworkz.addressapp.task1.channel.Channel;
 import com.xworkz.addressapp.task1.clients.Company;
+import com.xworkz.addressapp.task1.gun.Gun;
 import com.xworkz.addressapp.task1.hotel.Hotel;
 import com.xworkz.addressapp.task1.house.House;
 import com.xworkz.addressapp.task1.institute.Institute;
@@ -63,5 +66,22 @@ public class SpringConfigurations {
 	public Company getCompany() {
 		
 		return new Company();
+	}
+	
+	@Bean(value = "bar")
+	public Bar getBar() {
+		
+		return new Bar();
+	}
+	
+	@Bean(value = "gun")
+	public Gun getGun() {
+		return new Gun();
+		}
+	
+	@Bean(value = "building")
+	public Building getBuilding() {
+		
+		return new Building();
 	}
 }
